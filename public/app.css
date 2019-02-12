@@ -1,0 +1,132 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    background: #fcc2c1;
+    color: #6c6c6c;
+}
+p{
+    margin:0;
+}
+.wrapp{
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    height: 100vh;
+}
+.product-box {
+    /*width: 500px;*/
+    height: 400px;
+}
+.credit-card-back{
+    position: absolute;
+    background: #fff;
+    padding: 20px;
+    width: 420px;
+    box-shadow: -10px 10px 25px rgba(105,178,171,0.5);
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    margin-left: 25%;
+    max-height: 285px;
+}
+.credit-card-back p{
+    font-size: 13px;
+    font-weight: 600;
+}
+.credit-card-back label{
+    font-size: 11px;
+    margin:0px;
+    margin-top: 8px;
+    color: #fc8a89;
+    z-index: 1;
+}
+.credit-card-back input, .credit-card-back select {
+    border: 0px;
+    padding: 8px 0;
+    outline: none;
+    color: #6c6c6c;
+    margin-top: -8px;
+    background: none;
+}
+.credit-card-back input,button, select:active, :hover {
+    outline: none!important;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /*box-shadow:none!important;*/
+}
+.credit-card-back input:focus, .credit-card-back select:focus{
+    box-shadow:none!important;
+    background: none;
+}
+img.visa-logo {
+    width: 60px;
+    height: auto;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+}
+/*** Submit button ***/
+button.btn-submit {
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    user-select: none;
+    padding: 0.6em 1.3em;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: #fc8a89 linear-gradient(#fca6a5, #fc8a89);
+    box-shadow: inset #fca6a5 0 -1px 1px, inset 0 1px 1px #fc8a89,
+    #fc8a89 0 0 0 1px, rgba(0, 0, 0, 0.3) 0 2px 5px;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+    margin-top: 8px;
+}
+button.btn-submit:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    cursor: pointer;
+}
+button.btn-submit:active {
+    top: 1px;
+    color: #fff;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3), 0 1px 1px #fff,
+    inset 0 1px 2px rgba(0, 0, 0, 0.8), inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+@-webkit-keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+    }
+}
+@keyframes pulsate {
+    50% {
+        color: #fff;
+        text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px #ffd, 0 0 8px #fff;
+    }
+}
+.fa-arrow-right:before {
+    font-size: 30px;
+}
+/*** Submit button End ***/
+/****Error Modal Window****/
+.invalid-feedback {
+    position: absolute;
+    font-size: 65%;
+    margin: -10px 0;
+    padding: 0;
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    padding-right: 0.25rem !important;
+}
+/****Error Modal Window End****/
