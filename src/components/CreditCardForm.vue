@@ -182,7 +182,7 @@ export default {
             validate: value =>
                 new Promise(resolve => {
                     resolve({
-                        valid: value > exYear-1
+                        valid: value >= exYear
                     });
                 })
         });
